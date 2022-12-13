@@ -38,28 +38,29 @@ header p  {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3.2rem;
   padding-bottom: 6rem;
   animation: down2up 700ms;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
 }
 
 .quebra p{
-  display: flex;
-  align-items: center;
+  text-align: center;
   line-height: 1.8rem;
   font-family: var(--ff-text);
   font-size: 1.5rem;
   color: #23053A;
   margin: 4.3rem 0 6.3rem;
   padding: 0 2.5rem;
+  animation: up2down 700ms 100ms backwards;
 }
 
 .card {
   position: relative;
 }
+
 
 .card h2 {
   position: absolute;
@@ -74,6 +75,14 @@ main {
   top: 1.6rem;
   right: 1.6rem;
   animation: up2down 700ms 350ms backwards;
+}
+
+footer {
+  display: none;
+}
+
+.willhide {
+  display: none;
 }
 
 @keyframes down2up {
@@ -97,5 +106,73 @@ main {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 1100px) {
+  .page {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    width:37.7rem;;
+  }
+
+  aside {
+    background-color: var(--bg-primary);
+
+  }
+
+  main {
+    display: grid;
+    grid-template-areas: 
+    "A B E"
+    "D B F"
+    "D C F";
+    gap: 3.2rem;
+    padding: 6.4rem;
+  }
+
+  main div:nth-child(1) {
+    grid-area: A;
+  }
+  main div:nth-child(2) {
+    grid-area: B;
+  }
+  main div:nth-child(3) {
+    grid-area: C;
+  }
+  main div:nth-child(4) {
+    grid-area: D;
+  }
+  main div:nth-child(5) {
+    grid-area: E;
+  }
+  main div:nth-child(6) {
+    grid-area: F;
+  }
+
+  .card h2 {
+    display: none;
+  }
+
+  footer {
+    font-family: 'Open Sans';
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #4A4E69;
+    display: contents;
+  }
+
+  .willhide {
+    display: block;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
   }
 }
