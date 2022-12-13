@@ -175,4 +175,13 @@ footer {
     color: inherit;
     font-weight: bold;
   }
+
+  .card img {
+    transition: 250ms;
+  }
+
+.card img:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
 }
