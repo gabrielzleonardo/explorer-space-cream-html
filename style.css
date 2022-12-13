@@ -73,7 +73,7 @@ main {
   padding: 0 2.4rem;
   top: 1.6rem;
   right: 1.6rem;
-  animation: up2down 700ms 250ms backwards;
+  animation: up2down 700ms 350ms backwards;
 }
 
 @keyframes down2up {
