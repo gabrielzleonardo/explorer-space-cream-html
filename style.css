@@ -12,7 +12,6 @@ body {
 }
 
 .page {
-
   margin: 0 auto;
   text-align: center;
 }
@@ -44,6 +43,7 @@ main {
   align-items: center;
   gap: 3.2rem;
   padding-bottom: 6rem;
+  animation: down2up 700ms;
 }
 
 .quebra p{
@@ -73,4 +73,29 @@ main {
   padding: 0 2.4rem;
   top: 1.6rem;
   right: 1.6rem;
+  animation: up2down 700ms 250ms backwards;
+}
+
+@keyframes down2up {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes up2down {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
