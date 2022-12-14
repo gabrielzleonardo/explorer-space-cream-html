@@ -1,9 +1,9 @@
- :root {
-  --bg-primary: #8E9AAF;
-  --bg-secondary: #EFF1FF;
-  --ff-text: 'Palanquin', sans-serif;
-  --ff-heading: 'Staatliches', cursive;
-  --bg-overtext: #FEEAFA;
+:root {
+  --bg-primary: #8e9aaf;
+  --bg-secondary: #eff1ff;
+  --ff-text: "Palanquin", sans-serif;
+  --ff-heading: "Staatliches", cursive;
+  --bg-overtext: #feeafa;
   font-size: 62.5%;
 }
 
@@ -21,19 +21,18 @@ header {
   height: 31rem;
 }
 
-
 header img {
   padding: 3.2rem 0;
 }
 
-header p  {
+header p {
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
   font-family: var(--ff-heading);
-  background-color: #CBC0D3;
+  background-color: #cbc0d3;
   padding: 0.8rem 8.6rem;
   letter-spacing: 0.8px;
-  font-size: 4.0rem;
-  color: #FFFFFF;
+  font-size: 4rem;
+  color: #ffffff;
   height: 5rem;
 }
 
@@ -46,12 +45,12 @@ main {
   align-items: center;
 }
 
-.quebra p{
+.quebra p {
   text-align: center;
   line-height: 1.8rem;
   font-family: var(--ff-text);
   font-size: 1.5rem;
-  color: #23053A;
+  color: #23053a;
   margin: 4.3rem 0 6.3rem;
   padding: 0 2.5rem;
   animation: up2down 700ms 100ms backwards;
@@ -61,13 +60,12 @@ main {
   position: relative;
 }
 
-
 .card h2 {
   position: absolute;
   background-color: var(--bg-overtext);
   border-radius: 2rem;
   font-family: var(--ff-heading);
-  color: #4A4E69;
+  color: #4a4e69;
   font-size: 20px;
   line-height: 34px;
   letter-spacing: 0.05em;
@@ -116,20 +114,19 @@ footer {
   }
 
   header {
-    width:37.7rem;;
+    width: 37.7rem;
   }
 
   aside {
     background-color: var(--bg-primary);
-
   }
 
   main {
     display: grid;
-    grid-template-areas: 
-    "A B E"
-    "D B F"
-    "D C F";
+    grid-template-areas:
+      "A B E"
+      "D B F"
+      "D C F";
     gap: 3.2rem;
     padding: 6.4rem;
   }
@@ -137,20 +134,49 @@ footer {
   main div:nth-child(1) {
     grid-area: A;
   }
+
   main div:nth-child(2) {
     grid-area: B;
   }
+
   main div:nth-child(3) {
     grid-area: C;
   }
+
   main div:nth-child(4) {
     grid-area: D;
   }
+
   main div:nth-child(5) {
     grid-area: E;
   }
+
   main div:nth-child(6) {
     grid-area: F;
+  }
+
+  .card {
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+
+  .card-sm {
+    width: 32rem;
+    height: 25rem;
+  }
+
+  .card-bg {
+    width: 32rem;
+    height: 45rem;
+  }
+
+  .card img {
+    transition: 250ms;
+  }
+
+  .card img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   .card h2 {
@@ -158,11 +184,11 @@ footer {
   }
 
   footer {
-    font-family: 'Open Sans';
+    font-family: "Open Sans";
     font-size: 1.4rem;
     line-height: 2.8rem;
     text-align: center;
-    color: #4A4E69;
+    color: #4a4e69;
     display: contents;
   }
 
@@ -175,13 +201,4 @@ footer {
     color: inherit;
     font-weight: bold;
   }
-
-  .card img {
-    transition: 250ms;
-  }
-
-.card img:hover {
-  transform: scale(1.02);
-  cursor: pointer;
-}
 }
