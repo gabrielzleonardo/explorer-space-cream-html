@@ -1,5 +1,5 @@
 
-# Formulário mentoria
+# Space Cream
 
 Esse projeto foi realizado em um desafio proposto no curso Explorer da [RocketSeat](https://app.rocketseat.com.br/). Ele consiste na criação de uma landing page para fixar os conceitos de HTML e CSS vistos em aula, como: display grid, keyframes e responsividade, além de ter sido usado o conceito mobile first em seu desenvolvimento.
 
