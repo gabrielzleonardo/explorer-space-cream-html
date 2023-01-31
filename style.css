@@ -179,9 +179,7 @@ footer {
     cursor: pointer;
   }
 
-  .card h2 {
-    display: none;
-  }
+ 
 
   footer {
     font-family: "Open Sans";
